@@ -10,7 +10,7 @@ Javascript libraries include:
 [jQuery](http://jquery.com) (of course)
 
 Fonts and images are excluded.  
-A PHP file being hosted on my website is included in the php folder.
+A PHP file being hosted on my website is included (retrieval.php).
 
 ###Explaination:
  1) Safari injects library js and css files at page start  

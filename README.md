@@ -20,3 +20,6 @@ A PHP file being hosted on my website is included (retrieval.php).
  5) Tipped.js, using AJAX, sends the candidate ID (paired to name in array) to the PHP hosted on my site  
  6) Using a Candidate's ID, the PHP file retrieves data from OpenSecrets API and echoes it back into the tooltip  
  7) Echoed tooltip contents are styled with styles.css file  
+ 
+ ![alt text](http://i.imgur.com/SOcjgPL.png "Greenhouse Logo")  
+

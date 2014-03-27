@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src='names.js'></script>
+<script src='list.min.js'></script>
+<script src="jquery-1.9.1.js"></script>
+<script src="jquery-highlight1.js"></script>
+<script src="spinners.min.js"></script>
+<script src="tipped.js"></script>
+<script src="script.js"></script>
+<link type="text/css" rel="stylesheet" href="styles.css">
+<link type="text/css" rel="stylesheet" href="tipped.css">
+<link type="text/css" rel="stylesheet" href="popover.css">
+</head>
+<body>
+<img src="logo.png" id="listlogo">
+<p id="title">Greenhouse</p>
+<p id="caption">(Hover over names to view!)</p>
+<div id="hacker-list">
+    <input placeholder="Search..." class="search" />
+
+    <ul class="list">
+<script>
+for(name in obj) {
+	if(party[name] == 'D') {
+		document.write("<li id='name'><p class='candname' id='d'>" + name + "</p></li>");
+	}
+	else {
+		document.write("<li id='name'><p class='candname' id='r'>" + name + "</p></li>");
+	}
+}
+</script>
+    </ul>
+</div>
+<script>
+var options = {
+    valueNames: [ 'name', 'candname' ],
+	page: 700
+};
+
+var hackerList = new List('hacker-list', options);
+</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Nick Rubin</string>
+	<key>Builder Version</key>
+	<string>9537.74.9</string>
+	<key>CFBundleDisplayName</key>
+	<string>Greenhouse</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.donations</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Popovers</key>
+		<array>
+			<dict>
+				<key>Filename</key>
+				<string>popover.html</string>
+				<key>Height</key>
+				<real>400</real>
+				<key>Identifier</key>
+				<string>popover</string>
+				<key>Width</key>
+				<real>300</real>
+			</dict>
+		</array>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string></string>
+				<key>Identifier</key>
+				<string>greenhouse</string>
+				<key>Image</key>
+				<string>icon.png</string>
+				<key>Label</key>
+				<string>Greenhouse</string>
+				<key>Palette Label</key>
+				<string></string>
+				<key>Popover</key>
+				<string>popover</string>
+				<key>Tool Tip</key>
+				<string>Greenhouse</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>script.js</string>
+			</array>
+			<key>Start</key>
+			<array>
+				<string>jquery-1.9.1.js</string>
+				<string>tipped.js</string>
+				<string>names.js</string>
+				<string>spinners.min.js</string>
+				<string>jquery-highlight1.js</string>
+			</array>
+		</dict>
+		<key>Stylesheets</key>
+		<array>
+			<string>tipped.css</string>
+			<string>styles.css</string>
+		</array>
+		<key>Whitelist</key>
+		<array>
+			<string>http://*/*</string>
+		</array>
+	</dict>
+	<key>Description</key>
+	<string>Some are red, some are blue, all are green.</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>http://greenhouse.nicholasrub.in</string>
+</dict>
+</plist>

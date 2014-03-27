@@ -1,0 +1,286 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family:namenifndjkfanksdnf;
+	src:url('Helvetica.otf');
+	font-weight:bold;
+}
+
+@font-face {
+	font-family:serifajdsfkdjkfdjkf;
+	src:url('NotoSans-Bold.ttf');
+	font-weight:bold;
+}
+
+#my-tooltip-2986234 a {
+	text-decoration:underline !important;
+	cursor:pointer !important;
+}
+
+#my-tooltip-2986234 * {
+	margin:0 !important;
+    padding:0 !important;
+    border:0 !important;
+    outline:0 !important;
+    font-size:100% !important;
+    vertical-align:baseline !important;
+    background:transparent !important;
+    text-align:left !important;
+    line-height:1.3em !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+#my-tooltip-2986234 div {
+	background-color: #205cf6 !important;
+	overflow:hidden !important;
+}
+
+.highlight-67132 {
+	cursor:pointer !important;
+	border-bottom:1px solid blue !important;
+	background-color:#ddf3db !important;
+}
+
+.highlight-16235 {
+	cursor:pointer !important;
+	border-bottom:1px solid red !important;
+	background-color:#ddf3db !important;
+
+}
+
+#my-tooltip-2986234 table {
+	padding:0px !important;
+	width:100% !important;
+}
+
+#my-tooltip-2986234 p {
+	font-size:12px !important;
+	font-family:namenifndjkfanksdnf !important;
+	text-align:left !important;
+	color: #dbdbdb;
+	padding-left: 8px !important;
+	margin: 0px !important;
+	overflow: hidden !important;
+	margin-bottom:1px !important;
+}
+
+#my-tooltip-2986234 h1 {
+	font-size:16px !important;
+	font-family:namenifndjkfanksdnf !important;
+	text-align:left !important;
+	font-style:normal !important;
+	color: white !important;
+	display: inline-block !important;
+	margin:0px !important;
+	margin-right:8px !important;
+	padding-left:8px !important;
+	padding-right:0px !important;
+	padding-bottom:0px !important;
+	padding-top:8px !important;
+	font-weight:normal !important;
+	text-transform:none !important;
+}
+
+#my-tooltip-2986234 td {
+	font-size:12px !important;
+	margin:0px !important;
+	padding-right:3px !important;
+	font-family:serif !important;
+	padding-top:2px !important;
+	padding-left:4px !important;
+}
+
+#my-tooltip-2986234 th {
+	font-size:13px !important;
+	padding-bottom:3px !important;
+	padding-top: 3px !important;
+	padding-left:4px !important;
+	font-family:serifajdsfkdjkfdjkf !important;
+}
+
+#my-tooltip-2986234 img {
+	-webkit-transform: scale(0.75) !important;	
+	float:left !important;
+	margin-top:-3px !important;
+	margin-left:-3px !important;
+	margin-bottom:-3px !important;
+	margin-right:-10px !important;
+}
+
+#my-tooltip-2986234 h2 {
+	text-align:center !important;
+	font-size:9px !important;
+	font-family:serifajdsfkdjkfdjkf !important;
+	margin-top:7px !important;
+	margin-bottom:7px !important;
+	color:#333333 !important;
+}
+
+#my-tooltip-091234 * {
+	margin:0 !important;
+    padding:0 !important;
+    border:0 !important;
+    outline:0 !important;
+    font-size:100% !important;
+    vertical-align:baseline !important;
+    background:transparent !important;
+    text-align:left !important;
+    line-height:1.3em !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+#my-tooltip-091234 div {
+	background-color: #e41124 !important;
+	overflow:hidden !important;
+}
+
+#my-tooltip-091234 table {
+	padding:0px !important;
+	width:100% !important;
+}
+
+#my-tooltip-091234 p {
+	font-size:12px !important;
+	font-family:namenifndjkfanksdnf !important;
+	text-align:left !important;
+	color: #dbdbdb;
+	padding-left: 8px !important;
+	margin: 0px !important;
+	overflow: hidden !important;
+	margin-bottom:1px !important;
+}
+
+#my-tooltip-091234 h1 {
+	font-size:16px !important;
+	font-family:namenifndjkfanksdnf !important;
+	color: white !important;
+	font-style:normal !important;
+	padding-left:8px !important;
+	padding-bottom:0px !important;
+	padding-top:8px !important;
+	font-weight:normal;
+	display:inline-block !important;
+	text-align:left !important;
+	text-transform:none !important;
+}
+
+#my-tooltip-091234 td {
+	font-size:12px !important;
+	text-align:left;
+	margin:0px !important;
+	padding-right:3px !important;
+	font-family:serif !important;
+	padding-top:2px !important;
+	padding-left:4px !important;
+}
+
+#my-tooltip-091234 th {
+	text-align:left;
+	font-size:13px !important;
+	padding-bottom:3px !important;
+	padding-top: 3px !important;
+	padding-left:4px !important;
+	font-family:serifajdsfkdjkfdjkf !important;
+}
+
+#my-tooltip-091234 a {
+	text-decoration:underline !important;
+	cursor:pointer !important;
+}
+
+#my-tooltip-091234 h2 {
+	text-align:center !important;
+	font-size:9px !important;
+	font-family:serifajdsfkdjkfdjkf !important;
+	margin-top:7px !important;
+	margin-bottom:7px !important;
+	color:#333333 !important;
+}
+
+#my-tooltip-091234 img {
+	-webkit-transform: scale(0.75);	
+	float:left !important;
+	margin-top:-3px !important;
+	margin-left:-3px !important;
+	margin-bottom:-3px !important;
+	margin-right:-10px !important;
+}
+
+#state1235 {
+	color: white !important;
+	font-size:12px !important;
+	padding-bottom:-5px !important;
+}
+
+#pctlink12 {
+	color:white !important;
+	text-decoration:none !important;
+}
+
+#percent1 {
+	background-color:#f7051b !important;
+	padding:1px !important;
+	color:white !important;
+	line-height:1em !important;
+	margin-top:2px !important;
+	display:inline-block !important;
+	margin-bottom:8px !important;
+	border: 1px solid white !important;
+}
+#percent2 {
+	background-color:#e7b035 !important;
+	padding:1px !important;	
+	color:white !important;
+	line-height:1em !important;
+	margin-top:2px !important;
+	display:inline-block !important;
+	margin-bottom:8px !important;
+	border: 1px solid white !important;
+}
+#percent3 {
+	background-color:#4eba43 !important;
+	padding:1px !important;
+	color:white !important;
+	line-height:1em !important;
+	margin-top:2px !important;
+	display:inline-block !important;
+	margin-bottom:8px !important;
+	border: 1px solid white !important;
+}
+
+#greenhouse-1523 {
+	color: #447e2a !important;
+	text-decoration: underline !important;
+}
+
+#total-1847 {
+	text-align:right !important;
+}
+
+#totalheader152 {
+	text-align:right !important;
+	padding-right:4px !important;
+}
+
+#money2444 { 
+	color: #ddf3db !important;
+	padding:0px !important;
+	padding-bottom:0px !important;
+}
+
+#topbadge-152 {
+	color:white !important;
+	background-color:#333333 !important;
+	padding:1px !important;
+	margin-left:4px !important;
+	font-size:10px !important;
+	border: 1px solid white !important;
+	line-height:1em !important;
+	white-space:nowrap !important;
+}
+
+#lessthan1756 {
+	font-size:12px !important;
+	color:white !important;
+}

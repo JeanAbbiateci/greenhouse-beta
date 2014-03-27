@@ -1,30 +1,4 @@
 <?php
-/**
- *
- * php-crpapi example usage
- * @author Ben Pilkerton
- *
- *
- * There are a few options which need to be defined in the constructor 
- * in crpapi.php.  These include specifying your API key, default 
- * output type (json recommended, default) and cache lifetime 
- * (one day is default).
- *
- * Include the CRP API Library and create an object instance, specifying
- * the parameters.  In this example, we specify the output type.  This
- * could be ommitted and the default (defined in the constructor) will
- * be used.
- *
-**/
-
-/**
- * class php-crpapi
- * Simple PHP client library for working with the Center for Responsive Politics' API.
- * Information on CRP's API can be found at http://www.opensecrets.org/action/api_doc.php
- * Information on using this class, including examples at http://github.com/bpilkerton/php-crpapi
- * @author Ben Pilkerton <bpilkerton@gmail.com>
- * @version 0.2
- */
 
 header("Access-Control-Allow-Origin: *");
 
@@ -39,7 +13,6 @@ class crp_api {
         $this->base_url = "http://api.opensecrets.org/";
         $this->output = "json";
         
-        //Allow output type to be overridden on object instantiation
         $this->output = isset($params['output']) ? $params['output']: $this->output;
         $this->method = $method;
         self::load_params($params);
@@ -112,33 +85,17 @@ class crp_api {
     
 }
 
-
-/**
- * Setup the class instance with our request parameters
-**/
-
 $cand = $_POST['id'];
 
 $crp = new crp_api("candIndustry", Array("cid"=>$cand,"cycle"=>"2012","output"=>"json"));
 
 $sum = new crp_api("candSummary", Array("cid"=>$cand,"cycle"=>"2012","output"=>"json"));
 
-/**
- * These variables are exposed upon instantiation
-**/
-
-/**
- * Get the data. This example retrieves json data which is converted to 
- * an associative array. If using xml, a SimpleXML object will be returned.  
- * The getData method can optionally be passed a true/false value (true is 
- * default).  If set to false, a local file cache will not be used.
-**/
-
 $data = $crp->get_data();
 $sumdata = $sum->get_data();
 
 $pct = $_POST['pctg'];
-$finalpct = $pct * 100;
+$finalpct = $pct * 100; #percentage of donations ≤$200
 
 if($pct == 0.64){$rankval=1;}
 if($pct == 0.591){$rankval=2;}
@@ -192,9 +149,10 @@ if($pct == 0.182){$rankval=49;}
 if($pct == 0.181){$rankval=50;}
 
 if($finalpct === 100) {
-	$finalpct = "N/A";
+	$finalpct = "N/A"; #those without small donor data have a percentage of 100
 }
 
+#scales 1, 2, and 3 determine color of percentage (red, yellow, or green)
 if($finalpct < 5) {
 	$scale = 1;
 }
@@ -204,18 +162,6 @@ if($finalpct >= 5 and $finalpct < 10) {
 if($finalpct >= 10 and $finalpct < 99) {
 	$scale = 3;
 }
-
-/**
- * Show the cache status.  By default, the library caches API query results in a
- * gzipped, serialized form in a text file in the dataCache directory.  If you do 
- * not desire file caching, call get_data(false) (see above).  The cache life can
- * be set by altering $this->cache_time value in crpapi.php.  The default is 
- * one day.
-**/
-
-/**
- * Iterate over the results
-**/
 
 $first = true;
 
@@ -291,20 +237,6 @@ foreach($sumdata['response']['summary']['@attributes'] as $keytwo=>$valtwo) {
 		$firsttwo++;
 	}
 }	
-
-/**
-if($finalpct >= 18.1 and $finalpct < 24.4) {
-	echo "<span id='topbadge-152' title='In top 50 in Congress based on % of small contributions'>50</span>";
-}
-if($finalpct >= 24.4 and $finalpct < 33) {
-	echo "<span id='topbadge-152' title='In top 25 in Congress based on % of small contributions'>25</span>";
-}
-if($finalpct >= 33 and $finalpct < 41.7) {
-	echo "<span id='topbadge-152' title='In top 10 in Congress based on % of small contributions'>10</span>";
-}
-if($finalpct >= 41.7 and $finalpct < 99) {
-	echo "<span id='topbadge-152' title='In top 5 in Congress based on % of small contributions'>5</span>";
-}**/
 
 if (isset($rankval)) {
 echo "<span id='topbadge-152' title='Is #" . $rankval ." in congress based on % of small contributions.'>#" . $rankval . "</span>";

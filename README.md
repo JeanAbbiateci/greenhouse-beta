@@ -18,5 +18,5 @@ A PHP file being hosted on my website is included in the php folder.
  3) Script.js uses the highlight.js library to scan the page for an array of names (found in names.js)  
  4) Highlight.js adds <span> with class 'highlight-67132' if name is a Democrat, and 'highlight-16235' if Republican  
  5) Tipped.js, using AJAX, sends the candidate ID (paired in array) to the PHP hosted on my site  
- 6) Using the Candidates ID, the PHP file retrieves data from OpenSecrets API, and echoes it back into the tooltip  
+ 6) Using a Candidate's ID, the PHP file retrieves data from OpenSecrets API and echoes it back into the tooltip  
  7) Echoed tooltip contents are styled with styles.css file  

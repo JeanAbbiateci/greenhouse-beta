@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
                 data: {"party": party[currentKey], "cand": nick[currentKey], "url": window.location.hostname, "fullurl": document.URL}   
           });
     	
-        Tipped.create(this, "http://extension.nicholasrub.in/example.php", {
+        Tipped.create(this, "http://extension.nicholasrub.in/retrieval.php", {
             ajax: { data: {id: nick[currentKey], pctg: pcts[currentKey]}, type: 'post' },
 			skin: "white",
 			hook: 'rightmiddle',
@@ -47,7 +47,7 @@ jQuery(document).ready(function($) {
                 data: {"party": party[currentKey], "cand": nick[currentKey], "url": window.location.hostname, "fullurl": document.URL} 
           });    	
           
-        Tipped.create(this, "http://extension.nicholasrub.in/example.php", {
+        Tipped.create(this, "http://extension.nicholasrub.in/retrieval.php", {
             ajax: { data: { id: nick[currentKey], pctg: pcts[currentKey]}, type: 'post' },
 			skin: "white",
 			hook: 'rightmiddle',
